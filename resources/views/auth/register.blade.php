@@ -7,8 +7,8 @@
 @section('contenido')
     <form action="{{ route('register') }}" method="POST" autocomplete="off" novalidate>
         @csrf
-        <label for="name">Nombre</label>
-        <input type="text" name="name" id="name" placeholder="Nombre completo" value="{{ old('name') }}">
+        <label class="block" for="name">Nombre</label>
+        <input class="" type="text" name="name" id="name" placeholder="Nombre completo" value="{{ old('name') }}">
         @error('name')
             <p>{{ $message }}</p>
         @enderror
@@ -16,7 +16,7 @@
         <label for="username">Usuario</label>
         <input type="text" name="username" id="username" placeholder="Usuario" value="{{ old('username') }}">
         @error('username')
-            <p>{{ $message }}</p>
+            <p class="mt-2 invisible text-pink-600 text-sm">{{ $message }}</p>
         @enderror
         <br>
         <label for="email">Correo electrónico</label>
