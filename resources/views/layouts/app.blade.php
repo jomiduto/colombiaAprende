@@ -5,6 +5,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Colombia Aprende - @yield('titulo')</title>
+  @vite('resources/css/app.css')
 </head>
 <body>
     @yield('titulo')
